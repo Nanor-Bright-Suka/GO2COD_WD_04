@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+ }
+
+ body, html {
+    height: 100vh;
+    width: 100%;
+ }
+
+  .text-container {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    background-image: url("./img/strange.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+   .text-container h1{
+    font-size: 4rem;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  
+
+
+
+
+  /* Container styling */
+#gallery-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+#gallery {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+#image-wrapper {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Image styling */
+#image-wrapper img {
+  width: 100%;
+   height: 70%;
+  object-fit: cover;
+  border-radius: 8px; 
+  transition: transform 0.5s ease,object-fit 0.5s ease-in-out; 
+}
+
+/* Optional hover effect */
+#image-wrapper img:hover {
+  transform: scale(1.05);
+  object-fit: fill;
+}
+
+
+.download-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(23, 165, 23);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+
+#pagination-controls {
+margin-top: 6rem;  
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+ 
+}
+
+#prev-btn, #next-btn {
+  padding:  20px;
+  border-radius: 2px;
+  border: none;
+  margin-inline: 10px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
